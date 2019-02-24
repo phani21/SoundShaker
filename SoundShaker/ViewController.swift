@@ -7,14 +7,67 @@
 //
 
 import UIKit
+import AVFoundation
 
+
+var songNumberTobePlayed : Int = 0
 class ViewController: UIViewController {
-
+    
+    var player = AVAudioPlayer()
+    let audioResource = ["1","2","3","4","5","6","7","8","9","10"]
+    @IBOutlet weak var songLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipped(gesture:)))
+        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.swipped(gesture:)))
+        swipeRight.direction = UISwipeGestureRecognizer.Direction.left
+        self.view.addGestureRecognizer(swipeLeft)
     }
-
-
+    
+    override func motionEnded(_ _motion: UIEvent.EventSubtype, with event : UIEvent?){
+        if event?.subtype == UIEvent.EventSubtype.motionShake{
+            print("Device was shaken")
+            songNumberTobePlayed = Int.random(in: 0 ..< 10)
+            audioPlayer(songNumber: songNumberTobePlayed)
+        }
+        
+    }
+    
+    @objc func swipped(gesture: UIGestureRecognizer){
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer{
+            if swipeGesture.direction == UISwipeGestureRecognizer.Direction.right {
+                print("Swiped to right");
+                if(songNumberTobePlayed >= 1){
+                    songNumberTobePlayed-=1; print(songNumberTobePlayed+1)
+                }
+            }
+            else if swipeGesture.direction == UISwipeGestureRecognizer.Direction.left {
+                print("Swiped to left");
+                songNumberTobePlayed+=1; print(songNumberTobePlayed+1)
+            }
+        }
+        audioPlayer(songNumber: songNumberTobePlayed)
+    }
+    
+    // Function plays song with number 'songNumber' from the audioResource array!
+    func audioPlayer (songNumber:Int) {
+        songNumberTobePlayed = songNumber
+        let audioPath = Bundle.main.path(forResource: audioResource[songNumberTobePlayed], ofType: "mp3")
+        do{
+            player = try AVAudioPlayer(contentsOf : URL(fileURLWithPath: audioPath!))
+            songLabel.text = "Song number: " + audioResource[songNumberTobePlayed]
+        }catch{
+            print("Error playing")
+        }
+        player.play()
+        
+        
+    }
+    
 }
 
