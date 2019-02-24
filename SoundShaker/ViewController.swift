@@ -48,7 +48,10 @@ class ViewController: UIViewController {
             }
             else if swipeGesture.direction == UISwipeGestureRecognizer.Direction.left {
                 print("Swiped to left");
-                songNumberTobePlayed+=1; print(songNumberTobePlayed+1)
+                if(songNumberTobePlayed <= 9){
+                    songNumberTobePlayed+=1; print(songNumberTobePlayed+1)
+                }
+               
             }
         }
         audioPlayer(songNumber: songNumberTobePlayed)
