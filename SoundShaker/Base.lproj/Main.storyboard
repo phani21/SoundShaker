@@ -30,12 +30,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uow-gh-Z80">
+                                <rect key="frame" x="16" y="93" width="358" height="75"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Shake the device for shuffle play.  Swipe left for next  and right for previous song!">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wyM-pl-V2f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="45y-j8-LxU"/>
                             <constraint firstItem="NRL-bk-HHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="5iq-jE-Osn"/>
+                            <constraint firstItem="uow-gh-Z80" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="GXW-zz-rmz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uow-gh-Z80" secondAttribute="trailing" constant="16" id="OUo-a3-VZR"/>
                             <constraint firstItem="NRL-bk-HHP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="dAq-lZ-OVM"/>
+                            <constraint firstItem="uow-gh-Z80" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dGh-4X-CQr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NRL-bk-HHP" secondAttribute="bottom" constant="314" id="dm7-X4-pqP"/>
                             <constraint firstItem="wyM-pl-V2f" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gL9-UC-geB"/>
                             <constraint firstItem="wyM-pl-V2f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="178" id="oPY-Jr-YA0"/>
