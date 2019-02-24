@@ -43,13 +43,13 @@ class ViewController: UIViewController {
             if swipeGesture.direction == UISwipeGestureRecognizer.Direction.right {
                 print("Swiped to right");
                 if(songNumberTobePlayed >= 1){
-                    songNumberTobePlayed-=1; print(songNumberTobePlayed+1)
+                    songNumberTobePlayed-=1;
                 }
             }
             else if swipeGesture.direction == UISwipeGestureRecognizer.Direction.left {
                 print("Swiped to left");
                 if(songNumberTobePlayed <= 9){
-                    songNumberTobePlayed+=1; print(songNumberTobePlayed+1)
+                    songNumberTobePlayed+=1; 
                 }
                
             }
