@@ -12,6 +12,16 @@
 		4905F5F1222239EE0005476C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4905F5EF222239EE0005476C /* Main.storyboard */; };
 		4905F5F3222239EF0005476C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4905F5F2222239EF0005476C /* Assets.xcassets */; };
 		4905F5F6222239EF0005476C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4905F5F4222239EF0005476C /* LaunchScreen.storyboard */; };
+		4905F60922223AFC0005476C /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F5FF22223AFC0005476C /* 4.mp3 */; };
+		4905F60A22223AFC0005476C /* 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F60022223AFC0005476C /* 10.mp3 */; };
+		4905F60B22223AFC0005476C /* 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F60122223AFC0005476C /* 9.mp3 */; };
+		4905F60C22223AFC0005476C /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F60222223AFC0005476C /* 2.mp3 */; };
+		4905F60D22223AFC0005476C /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F60322223AFC0005476C /* 8.mp3 */; };
+		4905F60E22223AFC0005476C /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F60422223AFC0005476C /* 1.mp3 */; };
+		4905F60F22223AFC0005476C /* 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F60522223AFC0005476C /* 7.mp3 */; };
+		4905F61022223AFC0005476C /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F60622223AFC0005476C /* 5.mp3 */; };
+		4905F61122223AFC0005476C /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F60722223AFC0005476C /* 6.mp3 */; };
+		4905F61222223AFC0005476C /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4905F60822223AFC0005476C /* 3.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		4905F5F2222239EF0005476C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4905F5F5222239EF0005476C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4905F5F7222239EF0005476C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4905F5FF22223AFC0005476C /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 4.mp3; path = ../../../../../Documents/songs/4.mp3; sourceTree = "<group>"; };
+		4905F60022223AFC0005476C /* 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 10.mp3; path = ../../../../../Documents/songs/10.mp3; sourceTree = "<group>"; };
+		4905F60122223AFC0005476C /* 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 9.mp3; path = ../../../../../Documents/songs/9.mp3; sourceTree = "<group>"; };
+		4905F60222223AFC0005476C /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 2.mp3; path = ../../../../../Documents/songs/2.mp3; sourceTree = "<group>"; };
+		4905F60322223AFC0005476C /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 8.mp3; path = ../../../../../Documents/songs/8.mp3; sourceTree = "<group>"; };
+		4905F60422223AFC0005476C /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 1.mp3; path = ../../../../../Documents/songs/1.mp3; sourceTree = "<group>"; };
+		4905F60522223AFC0005476C /* 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 7.mp3; path = ../../../../../Documents/songs/7.mp3; sourceTree = "<group>"; };
+		4905F60622223AFC0005476C /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 5.mp3; path = ../../../../../Documents/songs/5.mp3; sourceTree = "<group>"; };
+		4905F60722223AFC0005476C /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 6.mp3; path = ../../../../../Documents/songs/6.mp3; sourceTree = "<group>"; };
+		4905F60822223AFC0005476C /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 3.mp3; path = ../../../../../Documents/songs/3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 		4905F5EA222239EE0005476C /* SoundShaker */ = {
 			isa = PBXGroup;
 			children = (
+				4905F5FE22223ACC0005476C /* audio */,
 				4905F5EB222239EE0005476C /* AppDelegate.swift */,
 				4905F5ED222239EE0005476C /* ViewController.swift */,
 				4905F5EF222239EE0005476C /* Main.storyboard */,
@@ -62,6 +83,23 @@
 				4905F5F7222239EF0005476C /* Info.plist */,
 			);
 			path = SoundShaker;
+			sourceTree = "<group>";
+		};
+		4905F5FE22223ACC0005476C /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				4905F60422223AFC0005476C /* 1.mp3 */,
+				4905F60222223AFC0005476C /* 2.mp3 */,
+				4905F60822223AFC0005476C /* 3.mp3 */,
+				4905F5FF22223AFC0005476C /* 4.mp3 */,
+				4905F60622223AFC0005476C /* 5.mp3 */,
+				4905F60722223AFC0005476C /* 6.mp3 */,
+				4905F60522223AFC0005476C /* 7.mp3 */,
+				4905F60322223AFC0005476C /* 8.mp3 */,
+				4905F60122223AFC0005476C /* 9.mp3 */,
+				4905F60022223AFC0005476C /* 10.mp3 */,
+			);
+			path = audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +160,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4905F61022223AFC0005476C /* 5.mp3 in Resources */,
+				4905F60E22223AFC0005476C /* 1.mp3 in Resources */,
+				4905F60B22223AFC0005476C /* 9.mp3 in Resources */,
+				4905F60F22223AFC0005476C /* 7.mp3 in Resources */,
+				4905F60A22223AFC0005476C /* 10.mp3 in Resources */,
 				4905F5F6222239EF0005476C /* LaunchScreen.storyboard in Resources */,
+				4905F60D22223AFC0005476C /* 8.mp3 in Resources */,
 				4905F5F3222239EF0005476C /* Assets.xcassets in Resources */,
 				4905F5F1222239EE0005476C /* Main.storyboard in Resources */,
+				4905F61122223AFC0005476C /* 6.mp3 in Resources */,
+				4905F60C22223AFC0005476C /* 2.mp3 in Resources */,
+				4905F61222223AFC0005476C /* 3.mp3 in Resources */,
+				4905F60922223AFC0005476C /* 4.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
